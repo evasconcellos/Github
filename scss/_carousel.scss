@@ -1,0 +1,23 @@
+
+.carousel-inner {width: 95%;
+  margin: 0 auto;
+}
+
+
+.carousel-item {
+    background-image: url("https://images.unsplash.com/photo-1556739442-4c892bcbe8ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80");
+    background-position:bottom;
+    background-size: cover;
+    min-height: 75vh;
+  }
+  
+  .carousel__item--background2 {
+    background-image: url("https://images.unsplash.com/photo-1585383234137-2367d3c5302d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+    background-position:center;
+  }
+
+  
+  .carousel__item--background3 {
+    background-image: url("https://images.unsplash.com/photo-1497800839469-bdbe4fd9d391?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-position:top
+  }

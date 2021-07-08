@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1099.9px) {
+
+    .presentation {
+      @include stylemargin (95%,auto);
+        min-height: 60%;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .presentationImg {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        
+      }
+    
+      .imgPresentation {
+        width: 20rem;
+        margin-top: 1.5rem;
+        height: 95%;
+        justify-items: center;
+        
+      }
+    
+     
+    }
+
+
+
+
+@media only screen and (min-width: 1100px) {
+
+
+  .presentation {
+    @include stylemargin (95%,auto);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .presentationImg {
+    width: 50%;
+  }
+
+  .presentationTitulos {
+    width: 50%;
+  }
+
+  .imgPresentation {
+    width: 32rem;
+    margin-top: 1.5rem;
+    height: 90%;
+    border-radius: 1rem;
+  }
+
+ 
+}

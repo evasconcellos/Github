@@ -1,0 +1,41 @@
+.error-message { display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+
+    .error-message__container{ text-align: center;
+        color: $color-text;
+        font-weight: bolder;
+    }
+
+        h1 { font-size: 4rem;
+
+        }
+
+        p {font-size: 1.5rem;
+
+
+
+        }
+
+        .animation { animation-duration: 2s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes error { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% { transform: translateY(-30px);}
+        60% {transform: translateY(-15px);}
+            
+        }
+
+        .error {animation-name: error;
+
+        }
+    }
+
+    
+
+
+

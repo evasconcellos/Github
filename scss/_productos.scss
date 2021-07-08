@@ -1,0 +1,43 @@
+
+//-----FALTAN @M QUERYS------//
+
+  .secProductos {
+    width: ($ancho)-5;
+    margin: auto;
+    margin-top: 10px;
+ 
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: $color-text;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+
+  .contenedorProd {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    border:$color-bk 10px solid;
+    width: fit-content;
+
+
+   img {
+    
+    width: 21vw;
+    max-width: ($ancho)-10;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+    opacity: ($opacidad*8);
+    object-fit: cover;
+    margin: 10px;
+    
+  }
+
+   img:hover {
+    opacity: ($opacidad*10);
+  }
+}
+

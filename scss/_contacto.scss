@@ -1,0 +1,119 @@
+.form-title {
+  text-align: center;
+  color: beige;
+  span {
+    color: black;
+  }
+}
+
+.contenedor {
+  form {
+    background-color: $color-bk;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+  }
+
+  .form-label {
+    display: block;
+    font-size: 1rem;
+    color: beige;
+    position: relative;
+  }
+}
+
+.form-input,
+.form-textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(27, 0, 58);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.contenedor .form .form-textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.btn-submit {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+.btn-submit:hover {
+  background-color: rgb(8, 248, 80);
+}
+
+
+.main-container {
+    width: 95%;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+    .text-container {
+
+      width: 100%;
+    
+    
+    
+    h2 {  
+      flex: 1 1 100px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 10px;
+      font-size: 1.5rem;
+      text-align: center;
+      justify-content: center;
+      color: black;
+      font-weight: bolder;
+      animation: all 2s ease;
+     
+    } 
+
+    h2:hover { color: $color-text ;
+
+
+    }
+
+    }
+
+  }
+  
+  .mapsRamos {
+    width: 100%;
+   
+
+  }
+
+  .contenedor {width: 100%;
+    margin: auto;
+
+  }
+
+  .mapGoogle { height: 50vh;
+    width: 100%;
+    min-width: 40%;
+
+
+  }
+  
