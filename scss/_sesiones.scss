@@ -1,45 +1,75 @@
-.sesiones-container {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  margin-top: 20px;
-  flex-direction: column;
+
+@media only screen and (max-width: 1099.9px) {
+  .sesiones-container {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+  }
 
   .sesiones-item {
     display: flex;
     align-items: center;
     margin: 30px 0;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .sesiones-text {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 60%;
 
     h2 {
       color: black;
       margin: 20px 0;
       padding: 10px 0;
+      font-size: 1.3rem;
       font-weight: bolder;
     }
     p {
       color: $color-text;
-      font-size: 1.2rem;
-      font-weight:bolder;
-  
-
+      font-size: 0.9rem;
+      font-weight: bolder;
     }
-  }
-
-
-  .sesiones-img {
-    width: 25vw;
-    border-radius: 10px;
   }
 }
 
+@media only screen and (min-width: 1100px) {
+  .sesiones-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
 
+    .sesiones-item {
+      display: flex;
+      align-items: center;
+      margin: 30px 0;
+      justify-content: space-between;
+    }
 
+    .sesiones-text {
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 60%;
 
+      h2 {
+        color: black;
+        margin: 20px 0;
+        padding: 10px 0;
+        font-weight: bolder;
+      }
+      p {
+        color: $color-text;
+        font-size: 1.2rem;
+        font-weight: bolder;
+      }
+    }
+
+    .sesiones-img {
+      width: 25vw;
+      border-radius: 10px;
+    }
+  }
+}

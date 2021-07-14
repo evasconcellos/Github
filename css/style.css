@@ -26,7 +26,7 @@ footer {
   #logoContainer .logo {
     width: 30vh;
     height: 20vh;
-    animation: none;
+    animation: animacionLogo 1s linear infinite alternate;
   }
 }
 @media only screen and (max-width: 1099.9px) {
@@ -382,41 +382,74 @@ footer {
   opacity: 100%;
 }
 
-.sesiones-container {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  margin-top: 20px;
-  flex-direction: column;
-}
-.sesiones-container .sesiones-item {
-  display: flex;
-  align-items: center;
-  margin: 30px 0;
-  justify-content: space-between;
-}
-.sesiones-container .sesiones-text {
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  width: 60%;
-}
-.sesiones-container .sesiones-text h2 {
-  color: black;
-  margin: 20px 0;
-  padding: 10px 0;
-  font-weight: bolder;
-}
-.sesiones-container .sesiones-text p {
-  color: #970484;
-  font-size: 1.2rem;
-  font-weight: bolder;
-}
-.sesiones-container .sesiones-img {
-  width: 25vw;
-  border-radius: 10px;
-}
+@media only screen and (max-width: 1099.9px) {
+  .sesiones-container {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+  }
 
+  .sesiones-item {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    flex-direction: column;
+  }
+
+  .sesiones-text {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sesiones-text h2 {
+    color: black;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  .sesiones-text p {
+    color: #970484;
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .sesiones-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .sesiones-container .sesiones-item {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    justify-content: space-between;
+  }
+  .sesiones-container .sesiones-text {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+  }
+  .sesiones-container .sesiones-text h2 {
+    color: black;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-weight: bolder;
+  }
+  .sesiones-container .sesiones-text p {
+    color: #970484;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .sesiones-container .sesiones-img {
+    width: 25vw;
+    border-radius: 10px;
+  }
+}
 .form-title {
   text-align: center;
   color: beige;
