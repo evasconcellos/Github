@@ -550,33 +550,59 @@ footer {
   min-width: 40%;
 }
 
-.mainConocenos {
-  width: 95%;
-  margin: auto;
-}
+@media only screen and (max-width: 766.9px) {
+  .mainConocenos {
+    width: 95%;
+    margin: auto;
+  }
 
-.imgConocenos {
-  border-radius: 30px;
-}
+  .imgConocenos {
+    border-radius: 30px;
+  }
 
-.container-text {
-  text-align: center;
-  justify-content: center;
-  font-weight: bolder;
+  .container-text {
+    font-weight: bolder;
+  }
+  .container-text h2 {
+    font-size: 1.3em;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  .container-text p {
+    color: #970484;
+    font-size: 1em;
+    width: 95%;
+    margin: 0 0.5em;
+  }
 }
-.container-text h2 {
-  color: black;
-  font-size: 1.6em;
-  margin: 30px;
-  padding: 10px;
-}
-.container-text p {
-  color: #970484;
-  font-size: 1.2em;
-  width: 95%;
-  margin: 0 0.5em;
-}
+@media only screen and (min-width: 767px) {
+  .mainConocenos {
+    width: 95%;
+    margin: auto;
+  }
 
+  .imgConocenos {
+    border-radius: 30px;
+  }
+
+  .container-text {
+    font-weight: bolder;
+  }
+  .container-text h2 {
+    color: black;
+    font-size: 1.6em;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  .container-text p {
+    color: #970484;
+    font-size: 1.2em;
+    width: 95%;
+    margin: 0 0.9em;
+  }
+}
 .error-message {
   display: flex;
   flex-direction: column;
