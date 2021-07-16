@@ -24,8 +24,8 @@ footer {
 
 @media only screen and (max-width: 700px) {
   #logoContainer .logo {
-    width: 30vh;
-    height: 20vh;
+    width: 20vh;
+    height: 18vh;
     animation: animacionLogo 1s linear infinite alternate;
   }
 }
@@ -261,7 +261,7 @@ footer {
     font-weight: bolder;
   }
   .presentationTitulos .text-present, .presentationTitulos .text__present--text2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bolder;
   }
 }
@@ -284,7 +284,7 @@ footer {
   .text-present {
     margin-top: 1.5rem;
     color: #970484;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: bolder;
   }
@@ -314,7 +314,7 @@ footer {
   .text-present {
     margin: 1.1rem;
     color: #970484;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bolder;
   }
 
