@@ -48,29 +48,35 @@
 
       </div>
      
-<div class="contenedor">
-  <form action="" class="form-all">
-    <div class="form-header">
-      <h1 class="form-title">C<span>ontacto</span></h1>
-    </div>
-    <label for="nombre" class="form-label"> Nombre:</label>
-    <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre"> 
-
-    <label for="nombre" class="form-label"> Apellido:</label>
-    <input type="text" id="nombre" class="form-input" placeholder="Escriba su apellido"> 
-
-    <label for="mail" class="form-label">Mail:</label>
-    <input type="text" class="form-input" placeholder="ejemplo@mail.com">
-
-    <label for="asunto" class="form-label"> Asunto:</label>
-    <input type="text" class="form-input" placeholder="Asunto:">
-
-    <label for="mensaje" class="form-label"> Mensaje:</label>
-    <textarea type="text" id="mensaje" class="form-textarea" placeholder="Escriba aquí su mensaje"></textarea>
-    <input type="submit" class="btn-submit" value="Enviar consulta"> 
-  </form>
-</div>
-
+      <div class="contenedor">
+        <form action="" class="form-all">
+          <div class="form-header">
+            <h1 class="form-title">Contacto</h1>
+          </div>
+          <label for="nombre" class="form-label"> Nombre:</label>
+          <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre" required> 
+      
+          <label for="nombre" class="form-label"> Apellido:</label>
+          <input type="text" id="nombre" class="form-input" placeholder="Escriba su apellido" required> 
+      
+          <label for="mail" class="form-label">Mail:</label>
+          <input type="text" class="form-input" placeholder="ejemplo@mail.com" required>
+      
+          <label for="asunto" class="form-label"> Asunto:</label>
+          <select name="asunto" class="form-input" id="asunto" required>
+            <option value="">[Seleccionar]</option>
+            <option value="">Sesiones</option>
+            <option value="">Productos</option>
+            <option value="">Otro</option>
+          </select>
+      
+          <label for="mensaje" class="form-label"> Mensaje:</label>
+          <textarea type="text" id="mensaje" class="form-textarea"
+          rows="5" placeholder="Escriba aquí su mensaje"></textarea>
+          <input type="submit" class="btn-submit" value="Enviar consulta"> 
+        </form>
+      </div>
+      
 <div class="text-container"> 
   <h2>
   Estamos en el corazón de Ramos Mejía.
