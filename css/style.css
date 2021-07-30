@@ -29,6 +29,7 @@ footer {
     animation: animacionLogo 1s linear infinite alternate;
   }
 }
+
 @media only screen and (max-width: 1099.9px) {
   .logo {
     height: 30vh;
@@ -39,13 +40,11 @@ footer {
     border-radius: 1rem;
     animation: animacionLogo 1s linear infinite alternate;
   }
-
   #logoContainer {
     min-height: 70%;
     min-width: 60%;
     display: flex;
   }
-
   @keyframes animacionLogo {
     from {
       transform: scale(0.9);
@@ -55,13 +54,13 @@ footer {
     }
   }
 }
+
 @media only screen and (min-width: 1100px) {
   /* HEADER */
   header {
     height: 25vh;
     display: flex;
   }
-
   .logo {
     height: 20vh;
     width: 35%;
@@ -70,11 +69,9 @@ footer {
     border-radius: 1rem;
     animation: animacionLogo 1s linear infinite alternate;
   }
-
   #logoContainer {
     width: 30%;
   }
-
   @keyframes animacionLogo {
     from {
       transform: scale(0.9);
@@ -84,6 +81,7 @@ footer {
     }
   }
 }
+
 @media only screen and (max-width: 700px) {
   .navBar {
     display: flex;
@@ -93,13 +91,11 @@ footer {
     background-color: #44446b;
     color: white;
   }
-
   .brandTitle {
     font-size: 1rem;
     margin: 0.5rem;
     height: 1.5rem;
   }
-
   #navbarLinks {
     height: 100%;
   }
@@ -121,7 +117,6 @@ footer {
   #navbarLinks li:hover {
     background-color: #555;
   }
-
   .toggleButton {
     position: absolute;
     top: 0.75rem;
@@ -138,21 +133,17 @@ footer {
     background-color: white;
     border-radius: 10px;
   }
-
   #navbarLinks:target {
     display: flex;
   }
-
   .navBar {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
   }
-
   .toggleButton {
     display: flex;
   }
-
   #navbarLinks {
     display: none;
     width: 100%;
@@ -169,6 +160,7 @@ footer {
     padding: 0.5rem 1rem;
   }
 }
+
 @media only screen and (max-width: 1099.9px) {
   nav {
     flex: 1;
@@ -183,11 +175,11 @@ footer {
     font-size: 1.5rem;
     text-decoration-line: none;
   }
-
   a:hover {
     color: black;
   }
 }
+
 @media only screen and (min-width: 1100px) {
   nav {
     flex: 1;
@@ -209,6 +201,7 @@ footer {
     font-size: 1.3rem;
   }
 }
+
 @media only screen and (max-width: 1099.9px) {
   .presentation {
     width: 95%;
@@ -217,14 +210,12 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
   .presentationImg {
     width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
   }
-
   .imgPresentation {
     width: 20rem;
     margin-top: 1.5rem;
@@ -232,6 +223,7 @@ footer {
     justify-items: center;
   }
 }
+
 @media only screen and (min-width: 1100px) {
   .presentation {
     width: 95%;
@@ -239,15 +231,12 @@ footer {
     display: flex;
     justify-content: space-around;
   }
-
   .presentationImg {
     width: 50%;
   }
-
   .presentationTitulos {
     width: 50%;
   }
-
   .imgPresentation {
     width: 32rem;
     margin-top: 1.5rem;
@@ -255,16 +244,18 @@ footer {
     border-radius: 1rem;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .presentationTitulos .text-titulos, .presentationTitulos .text__titulos--titulo2 {
     font-size: 1.2rem;
     font-weight: bolder;
   }
   .presentationTitulos .text-present, .presentationTitulos .text__present--text2 {
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: bolder;
   }
 }
+
 @media only screen and (max-width: 1099.9px) {
   .text-titulos {
     margin-top: 20px;
@@ -276,11 +267,9 @@ footer {
     align-items: center;
     font-weight: bolder;
   }
-
   .text__titulos--titulo2 {
     margin-top: 18px;
   }
-
   .text-present {
     margin-top: 1.5rem;
     color: #970484;
@@ -288,11 +277,11 @@ footer {
     text-align: center;
     font-weight: bolder;
   }
-
   .text__present--text2 {
     margin-top: 1.3rem;
   }
 }
+
 @media only screen and (min-width: 1100px) {
   .text-titulos {
     margin-top: 3rem;
@@ -305,23 +294,21 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
   .text__titulos--titulo2 {
     padding: 1.1rem;
     margin-top: 1.5rem;
   }
-
   .text-present {
     margin: 1.1rem;
     color: #970484;
     font-size: 1.2rem;
     font-weight: bolder;
   }
-
   .text__present--text2 {
     margin-top: 1rem;
   }
 }
+
 .redesFooter {
   width: 3rem;
   height: 2.5rem;
@@ -349,36 +336,43 @@ footer {
   background-position: top;
 }
 
-.secProductos {
+.productos {
   width: 95%;
   margin: auto;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.secProductos h2 {
+
+.productos .productos__titulo {
   margin-top: 50px;
   margin-bottom: 50px;
   color: #970484;
+  font-size: 1.4rem;
   font-weight: bolder;
   text-align: center;
 }
 
-.contenedorProd {
+.productos__img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border: #44446b 10px solid;
   width: fit-content;
 }
-.contenedorProd img {
-  width: 21vw;
-  max-width: 90%;
+
+.productos__img img {
+  max-width: 100%;
+  width: 17rem;
   border-radius: 1rem;
   transition: all 0.5s ease;
   opacity: 80%;
   object-fit: cover;
-  margin: 10px;
+  margin: 30px;
+  cursor: pointer;
 }
-.contenedorProd img:hover {
+
+.productos__img img:hover {
   opacity: 100%;
 }
 
@@ -388,14 +382,12 @@ footer {
     margin: auto;
     margin-top: 20px;
   }
-
   .sesiones-item {
     display: flex;
     align-items: center;
     margin: 30px 0;
     flex-direction: column;
   }
-
   .sesiones-text {
     justify-content: center;
     flex-direction: column;
@@ -414,6 +406,7 @@ footer {
     font-weight: bolder;
   }
 }
+
 @media only screen and (min-width: 1100px) {
   .sesiones-container {
     width: 95%;
@@ -450,10 +443,12 @@ footer {
     border-radius: 10px;
   }
 }
+
 .form-title {
   text-align: center;
   color: beige;
 }
+
 .form-title span {
   color: black;
 }
@@ -468,6 +463,7 @@ footer {
   padding-bottom: 30px;
   border-radius: 30px;
 }
+
 .contenedor .form-label {
   display: block;
   font-size: 1rem;
@@ -516,9 +512,11 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .main-container .text-container {
   width: 100%;
 }
+
 .main-container .text-container h2 {
   flex: 1 1 100px;
   margin-top: 30px;
@@ -531,6 +529,7 @@ footer {
   font-weight: bolder;
   animation: all 2s ease;
 }
+
 .main-container .text-container h2:hover {
   color: #970484;
 }
@@ -555,11 +554,9 @@ footer {
     width: 95%;
     margin: auto;
   }
-
   .imgConocenos {
     border-radius: 30px;
   }
-
   .container-text {
     font-weight: bolder;
   }
@@ -573,19 +570,18 @@ footer {
     color: #970484;
     font-size: 1em;
     width: 95%;
-    margin: 0 0.5em;
+    margin: 0 .5em;
   }
 }
+
 @media only screen and (min-width: 767px) {
   .mainConocenos {
     width: 95%;
     margin: auto;
   }
-
   .imgConocenos {
     border-radius: 30px;
   }
-
   .container-text {
     font-weight: bolder;
   }
@@ -600,9 +596,10 @@ footer {
     color: #970484;
     font-size: 1.2em;
     width: 95%;
-    margin: 0 0.9em;
+    margin: 0 .9em;
   }
 }
+
 .error-message {
   display: flex;
   flex-direction: column;
@@ -610,25 +607,31 @@ footer {
   justify-content: center;
   height: 30rem;
 }
+
 .error-message .error-message__container {
   text-align: center;
   color: #970484;
   font-weight: bolder;
 }
+
 .error-message h1 {
   font-size: 4rem;
 }
+
 .error-message p {
   font-size: 1.5rem;
 }
+
 .error-message a {
   text-decoration: none;
 }
+
 .error-message .animation {
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
+
 @keyframes error {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -640,8 +643,8 @@ footer {
     transform: translateY(-15px);
   }
 }
+
 .error-message .error {
   animation-name: error;
 }
-
 /*# sourceMappingURL=style.css.map */
