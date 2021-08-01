@@ -1,75 +1,128 @@
+.sesiones-container {
+  @include stylemargin(95%, auto);
+}
 
-@media only screen and (max-width: 1099.9px) {
-  .sesiones-container {
-    width: 95%;
-    margin: auto;
-    margin-top: 20px;
-  }
+.sesiones-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .sesiones-item {
-    display: flex;
-    align-items: center;
-    margin: 30px 0;
-    flex-direction: column;
-  }
+.imagenes {
+  position: relative;
+  flex: 1;
+  max-width: 320px;
+  min-width: 320px;
+  height: 450px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: black;
+  cursor: pointer;
+}
 
-  .sesiones-text {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.imagenes img {
+  height: 450px;
+  width: 320px;
+  opacity: 0.8;
+  position: relative;
+  vertical-align: top;
+  transition: 0.6s;
+  transition-property: opacity;
+}
 
-    h2 {
-      color: black;
-      margin: 20px 0;
-      padding: 10px 0;
-      font-size: 1.3rem;
-      font-weight: bolder;
-    }
-    p {
-      color: $color-text;
-      font-size: 0.9rem;
-      font-weight: bolder;
-    }
+.imagenes:hover img {
+  opacity: 1;
+}
+
+.imagenes .textos {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenes .textos h2 {
+  background-color: $color-text;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 70px;
+  transition: 0.4s;
+  transition-property: transform;
+}
+
+.imagenes .textos h2 span {
+  font-weight: 900;
+}
+
+.imagenes:hover .textos h2 {
+  transform: translateY(-60px);
+}
+
+.imagenes .textos p {
+  background-color: $color-text;
+  margin: 30px 30px 0 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+}
+
+.imagenes:hover .textos p {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+.link-consulta {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  bottom: -60px;
+  transition: 0.6s;
+  transition-property: bottom;
+}
+
+.imagenes:hover .link-consulta {
+  bottom: 0;
+}
+
+.link-consulta .consulta-aca {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.link-consulta .consulta-aca span {
+  font-weight: 900;
+}
+
+@media (max-width: 1080px) {
+  .imagenes {
+    flex: 100%;
+    max-width: 320px;
   }
 }
 
-@media only screen and (min-width: 1100px) {
-  .sesiones-container {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
+@media (max-width: 400px) {
+  .imagenes .textos p {
+    font-size: 15px;
+  }
 
-    .sesiones-item {
-      display: flex;
-      align-items: center;
-      margin: 30px 0;
-      justify-content: space-between;
-    }
-
-    .sesiones-text {
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      width: 60%;
-
-      h2 {
-        color: black;
-        margin: 20px 0;
-        padding: 10px 0;
-        font-weight: bolder;
-      }
-      p {
-        color: $color-text;
-        font-size: 1.2rem;
-        font-weight: bolder;
-      }
-    }
-
-    .sesiones-img {
-      width: 25vw;
-      border-radius: 10px;
-    }
+  .link-consulta .consulta-aca {
+    font-size: 15px;
   }
 }
