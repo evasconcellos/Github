@@ -60,8 +60,8 @@
 
 
 .main-container {
-    width: 95%;
-    margin: auto ;
+  @include stylemargin (95%,auto);
+
     display: flex;
     align-items: center;
     flex-direction: column;
