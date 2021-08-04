@@ -10281,7 +10281,7 @@ fieldset:disabled .btn {
 
 body {
   font-family: "Montserrat", sans-serif;
-  max-width: 1700px;
+  max-width: 1920px;
   background-color: white;
 }
 
@@ -10702,6 +10702,7 @@ footer {
   min-width: 320px;
   height: 450px;
   margin: 10px;
+  margin-top: 40px;
   overflow: hidden;
   border-radius: 15px;
   background-color: black;
